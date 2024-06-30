@@ -141,12 +141,12 @@
 
 
 import React, { useState } from 'react';
-import { View, TextInput, StyleSheet, Text, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { View, TextInput, StyleSheet, Text, TouchableOpacity, ActivityIndicator, Image } from 'react-native';
 import { useRouter } from 'expo-router';
 import { Colors } from './../constants/Colors'; // Adjust the import path as needed
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
-import { db } from './../../MyNewApp/Configs/FireBaseConfig'; // Adjust the import path as needed
+import { db } from './../../Rento/Configs/FireBaseConfig'; // Adjust the import path as needed
 import { addDoc, collection } from 'firebase/firestore';
 
 export default function Log_in() {
@@ -161,7 +161,13 @@ export default function Log_in() {
         setErrorMessage('');
 
         try {
+            if (!username.trim() || !password.trim()) {
+                alert( 'Both fields are required.');
+                return;
+            }
+
             // Adding data
+
             await addDoc(collection(db, "users"), {
                 username,
                 password
@@ -176,6 +182,7 @@ export default function Log_in() {
 
     return (
         <View style={styles.container}>
+            <Image source={require('./../assets/images/Rento.png')} style={{height:50,width:50}}/>
             <Text style={styles.title}>Rento</Text>
             <Text style={styles.subtitle}>All in one App</Text>
             

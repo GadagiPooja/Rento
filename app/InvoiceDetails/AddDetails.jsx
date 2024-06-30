@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
-import { db } from '../../../MyNewApp/Configs/FireBaseConfig';
+import { db } from '../../../Rento/Configs/FireBaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 import { Colors } from '../../constants/Colors';
 import { Ionicons } from '@expo/vector-icons';

@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "MyNewApp",
-    "slug": "MyNewApp",
+    "name": "Rento App",
+    "slug": "rento-app",
+    "description":"Created a responsive tenant management app named 'Rento' in React Native, featuring a login screen and three interconnected tabs for messaging, invoices, and surveys. Implemented smooth transitions, intuitive error handling, and ensure consistent user experience across devices.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/Rento.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
