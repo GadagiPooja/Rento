@@ -2,7 +2,7 @@
   "expo": {
     "name": "Rento App",
     "slug": "rento-app",
-    "description":"Created a responsive tenant management app named 'Rento' in React Native, featuring a login screen and three interconnected tabs for messaging, invoices, and surveys. Implemented smooth transitions, intuitive error handling, and ensure consistent user experience across devices.",
+    "description": "Created a responsive tenant management app named 'Rento' in React Native, featuring a login screen and three interconnected tabs for messaging, invoices, and surveys. Implemented smooth transitions, intuitive error handling, and ensure consistent user experience across devices.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/Rento.png",
@@ -20,7 +20,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.poojagadagi.rentoapp"
     },
     "web": {
       "bundler": "metro",
@@ -32,6 +33,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "fb4a5435-8b7f-45ca-9ade-8063f9a6e6e7"
+      }
     }
   }
 }
