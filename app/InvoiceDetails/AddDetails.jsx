@@ -10,7 +10,7 @@ import { useRouter } from 'expo-router';
 const AddDetails = () => {
   const [invoices, setInvoices] = useState([]);
   const router=useRouter();
-
+  
   useEffect(() => {
     const fetchData = async () => {
       const querySnapshot = await getDocs(collection(db, 'invoices'));
