@@ -48,6 +48,7 @@ const AddDetails = () => {
         ))}
       </View>
     </View>
+    {/* </View> */}
   </ScrollView>
   );
 };
